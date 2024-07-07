@@ -1,0 +1,36 @@
+:root{
+    --lightred : #F06449;
+    --bgcolor: #EDE6E3;
+    --primarywhite: white;
+}
+
+.navwrapper, .navigation__wrapper, .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navwrapper{
+    padding: 1em;
+    background-color: var(--bgcolor);
+}
+.navigation__wrapper{
+    width: 70%;
+}
+.navigation{
+    width:75%;
+}
+
+.signin-btn{
+margin-right: 1em;
+border: 1px solid var(--lightred);
+}
+
+.signup-btn{
+    background-color: var(--lightred);
+    color:var(--primarywhite) ;
+}
+.signin-btn, .signup-btn{
+    padding: .5em;
+    border-radius: 10px;
+}
