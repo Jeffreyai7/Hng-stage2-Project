@@ -3,14 +3,14 @@ import firstrack  from "../assets/Images/firstrack.png"
 import secondrack from "../assets/Images/secondrack.png"
 
 
-function Aboutus(){
+function Aboutinfo(){
+
 
     return (
-        <>
-            <main>
-    <section id="about-us" className="about-us">
+        <section id="about-us" className="about-us">
         <h1>About our Products</h1>
-        <div>
+        <div className="advertisedProducs-container">
+            <div className="flexbox">
             <div>
                 <h2>Elevate Your Style With Our Exclusive Clothing Line</h2>
                 <p>Our clothing line is designed for those who believe in expressing their unique style with confidence and 
@@ -22,6 +22,11 @@ function Aboutus(){
             <div>
                 <img src={firstrack} alt="clothesrack" />
             </div>
+            </div>
+            <div className="flexbox">
+            <div>
+                <img src={secondrack} alt="clothesrack" />
+            </div>
             <div>
                 <h2>Unleash Your Fashion Potential with Our Signature Clothing Line</h2>
                 <p>Step into a realm where your style knows no bounds.
@@ -29,14 +34,12 @@ function Aboutus(){
                   Every piece is a masterpiece, designed to accentuate your personality and elevate your wardrobe. From effortlessly stylish casual wear to breathtaking evening outfits, our collection empowers you to express yourself with confidence and flair. Embrace the allure of high fashion, redefine your look, and make every day a runway moment with our exclusive selection.
                 </p>
             </div>
-            <div>
-                <img src={secondrack} alt="clothesrack" />
             </div>
         </div>
-    </section>
-    </main>
-        </>
+        </section>
+
     )
 }
 
-export default Aboutus;
+
+export default Aboutinfo;

@@ -2,6 +2,8 @@
     --lightred : #F06449;
     --bgcolor: #EDE6E3;
     --primarywhite: white;
+    --lightorange: #DAB1AA;
+
 }
 
 .navwrapper, .navigation__wrapper, .navigation{
@@ -14,8 +16,13 @@
     padding: 1em;
     background-color: var(--bgcolor);
 }
+
+.navwrapper span{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 .navigation__wrapper{
-    width: 70%;
+    width: 80%;
 }
 .navigation{
     width:75%;
@@ -33,4 +40,125 @@ border: 1px solid var(--lightred);
 .signin-btn, .signup-btn{
     padding: .5em;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+/* About us Section css */
+
+.advertisedProducs-container{
+width: 90%;
+margin-inline: auto;
+
+}
+.about-us h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.flexbox{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.flexbox > *{
+    width: 47%;
+}
+
+.flexbox p{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+/* products secton */
+.products_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products_title h1{
+    font-size: 2rem;
+    padding-bottom: .8em;
+}
+
+.products-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin-inline: auto;
+    gap: 0.65em;
+
+}
+
+.products-grid > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EDE6E3;
+    border-radius: 40px;
+    padding: .825em;
+}
+
+.star-con{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+.type{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    margin-top: 1em;
+}
+
+.product-info{
+    background-color: var(--lightorange);
+    border-radius: 10px;
+    padding: 1em 0;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.btn span{
+    padding: .5em;
+    border-radius: 10px;
+    background-color: var(--lightred);
+    color: white;
+}
+
+/* footer css */
+
+.footer-container{
+width: 40%;
+margin-inline: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1em 0;
+gap: 1em;
+}
+.social-icons{
+    display: flex;
+    gap: 2em;
+}
+input[type="email"]{
+    display: inline-block;
+    height:3.3em;
+    width: 12em;
+    border: 1px solid var(--lightred);
+    padding-left: 1em;
+}
+
+.input-container button{
+height: 3.3rem;
+width: 5.25em;
+background-color: var(--lightred);
+color: white;
+cursor: pointer;
 }

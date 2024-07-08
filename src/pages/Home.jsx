@@ -1,8 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../assets/Images/heropage.png"
-import Aboutus from "../components/Aboutus";
-import ProductList from "../components/ProductList";
+import Aboutinfo from "../components/Aboutinfo";
+import Products from "../components/Products";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+
+
 
 
 function Home () {
@@ -12,8 +16,9 @@ function Home () {
     <div className="hero-section">
         <img src={Hero} alt="hero" />
     </div>
-    <Aboutus/>
-    <ProductList/>
+    <Aboutinfo/>
+    <Products/>
+    <Footer/>
     </>
 }
 
