@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import cloth1 from "../assets/Images/cloth1.png"
 import Ellip1 from "../assets/svg/Ellipse60.svg"
@@ -8,13 +8,26 @@ import Ellip4 from "../assets/svg/Ellipse63.svg"
 import Ellip5 from "../assets/svg/Ellipse64.svg"
 import Ellip6 from "../assets/svg/Ellipse65.svg"
 import whitecart from "../assets/svg/whitecart.svg"
+import { Link } from "react-router-dom";
 
 
 function Cart () {
+const [num, setNum] = useState(1)
+
+
+function increase (){
+
+    setNum(num + 1)
+}
+
+function decrease (){
+
+    setNum(num - 1)
+}
 
 
     return <>
-    <Navbar/>
+    <div className="cart_wrapper">
     <div className="cart-container">
         <div className="item_wrapper">
             <div className="product-container">
@@ -36,15 +49,41 @@ function Cart () {
                     <span className="sizes">XXL</span>
                 </div>
                 <div className="product-footer__btn">
+                    <Link to="/checkout">
                     <div className="btn-cart"><span>Add to Cart</span><span><img src={whitecart} alt="cart"/></span></div>
-                    <div className="num-btn"><span>-</span><span>1</span><span>+</span></div>
+                    </Link>
+                    <div className="num-btn"><span onClick={decrease}>-</span><span>{num}</span><span onClick={increase}>+</span></div>
                 </div>
             </div>
         </div>
         <div>
-            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus sapiente culpa odio quis atque nihil consectetur dicta consequatur quia soluta.</p>
+            <h1 className="exo">Round neck T-Shirt</h1>
+            <div className="description">
+            <p>
+            Classic Round Neck T-Shirt
+Upgrade your everyday wardrobe with our Classic Round Neck T-Shirt. Made from premium, breathable cotton, this t-shirt offers unmatched comfort and style. 
+            </p>
+            <p>Key Features:</p>
+            <ul>
+                <li>Soft and breathable premium cotton fabric</li>
+                <li>Versatile round neckline</li>
+                <li>Flattering tailored fit</li>
+                <li>Available in multiple vibrant colors</li>
+                <li>Easy machine wash care</li>
+            </ul>
+            <p>
+            Experience the perfect blend of comfort and style with our Classic Round Neck T-Shirt, an essential piece for any wardrobe.
+            </p>
+            </div>
         </div>
     </div>
+    <div className="chekout-btn">
+    <Link to="/checkout">
+        <span>Checkout</span>
+    </Link>
+    </div>
+    </div>
+
     </>
 }
 

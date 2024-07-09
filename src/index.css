@@ -47,10 +47,11 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
+input, button, label,
 textarea, select {
   font-family: inherit;
   font-size: inherit;
+  display: block;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
@@ -66,4 +67,5 @@ textarea:not([rows]) {
 
 a{
   text-decoration: none;
+  color: inherit;
 }

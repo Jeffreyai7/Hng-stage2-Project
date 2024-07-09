@@ -2,14 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-
 function Navbar() {
 
 
     return <>
-     <nav className="navwrapper">
+     <nav className="navwrapper hide">
         <div>
-        <span>T/S</span>
+        <span className="title">T/S</span>
         </div>
         <div className="navigation__wrapper">
         <div className="navigation">

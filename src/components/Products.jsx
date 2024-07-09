@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import cloth1 from "../assets/Images/cloth1.png"
 import cloth2 from "../assets/Images/cloth2.png"
 import cloth3 from "../assets/Images/cloth3.png"
@@ -8,6 +7,7 @@ import cloth5 from "../assets/Images/cloth5.png"
 import cloth6 from "../assets/Images/cloth6.png"
 import star from "../assets/svg/Star1.svg"
 import cart from "../assets/svg/mdi_cart-outline.svg"
+import { Link } from "react-router-dom";
 
 
 
@@ -17,13 +17,15 @@ function Products(){
         <>
         <section>
             <div className="products_title">
-            <h1>Trending Products</h1><img src={cart} alt="cart" />
+            <h1 className="exo">Trending Products</h1><img src={cart} alt="cart" />
             </div>
         <div className="products-grid" >
         <div>
-            <div>
+            <Link to="/cart">
+            <div className="product__wrapper">
                 <img src={cloth1} alt="cloth" />
             </div>
+            </Link>
             <div className="product-info">
                 <div className="star-con">
                     <img src={star} alt="star" />
@@ -38,9 +40,11 @@ function Products(){
             </div>
         </div>
         <div>
-            <div>
+            <Link to="/cart">
+            <div className="product__wrapper">
                 <img src={cloth2} alt="cloth" />
             </div>
+            </Link>
             <div className="product-info">
                 <div className="star-con">
                     <img src={star} alt="star" />
@@ -55,9 +59,11 @@ function Products(){
             </div>
         </div>
         <div>
-            <div>
+            <Link to="/cart">
+            <div className="product__wrapper">
                 <img src={cloth3} alt="cloth" />
             </div>
+            </Link>
             <div className="product-info">
                 <div className="star-con">
                     <img src={star} alt="star" />
@@ -72,9 +78,11 @@ function Products(){
             </div>
         </div>
         <div>
-            <div>
+        <Link to="/cart">
+            <div className="product__wrapper">
                 <img src={cloth4} alt="cloth" />
             </div>
+        </Link>
             <div className="product-info">
                 <div className="star-con">
                     <img src={star} alt="star" />
@@ -89,9 +97,11 @@ function Products(){
             </div>
         </div>
         <div>
-            <div>
+        <Link to="/cart">
+            <div className="product__wrapper">
                 <img src={cloth5} alt="cloth" />
             </div>
+        </Link>
             <div className="product-info">
                 <div className="star-con">
                     <img src={star} alt="star" />
@@ -106,9 +116,11 @@ function Products(){
             </div>
         </div>
         <div>
-            <div>
+        <Link to="/cart">
+            <div className="product__wrapper">
                 <img src={cloth6} alt="cloth" />
             </div>
+        </Link>
             <div className="product-info">
                 <div className="star-con">
                     <img src={star} alt="star" />
